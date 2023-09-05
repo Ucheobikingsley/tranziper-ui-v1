@@ -11,7 +11,6 @@ import {
 
 import DotSvg from '../../assets/svg_transformer/dotSvg';
 import IllustrationOne from '../../assets/svg_transformer/illustrationOne';
-import Starter_logo from '../../assets/svg_transformer/starter_logo';
 import { BORDERRADIUS, COLORS, FONTSIZE, SPACING } from '../../theme/theme';
 const { width, height } = Dimensions.get('window');
 
@@ -34,7 +33,7 @@ export default function Intro_1() {
         <DotSvg width={24} height={8} color="#1B5E20" />
       </View>
       <TouchableOpacity style={styles.create}>
-        <Text style={styles.textColor}>Create an account</Text>
+        <Text style={styles.textColor}>Get Started</Text>
       </TouchableOpacity>
       <Text style={styles.skipButton}>Skip</Text>
     </View>
@@ -91,7 +90,6 @@ const styles = StyleSheet.create({
     fontSize: FONTSIZE.size_14,
     marginTop: 40,
     letterSpacing: 0.17,
-    fontWeight: 600,
     color: COLORS.MAIN_GREEN,
   },
 });

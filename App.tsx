@@ -4,6 +4,7 @@ import { useCallback } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
 import FirstTimeLoginIn from './components/FirstTimeLoginIn';
+import RegistrationScreen from './components/screens/Registration';
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -27,16 +28,18 @@ export default function App() {
     <View style={styles.container}>
       <StatusBar hidden={false} style="auto" />
       <FirstTimeLoginIn />
+      
     </View>
+    
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    // backgroundColor: '#fff',
+    backgroundColor: '#fff',
     marginTop: 30,
-    alignItems: 'center',
+    // alignItems: 'center',
     justifyContent: 'center',
   },
 });
