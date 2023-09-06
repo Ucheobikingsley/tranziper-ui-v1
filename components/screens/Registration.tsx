@@ -10,8 +10,15 @@ const RegistrationScreen = ({ navigator }) => {
            
                 <Text style={{ color: COLORS.Black, fontSize: 40, fontWeight: 'bold' }}> Sign Up</Text>
 
-                <View style={{ marginVertical: 20 }}>
-                    <Input placeholder='Enter Your email address' iconName='email-outline' label='Email' />
+                <View style={{ marginVertical: 20, }}>
+                    
+                    <Input placeholder='FirstName' label='First Name' />
+                    <Input placeholder='LastName'  label='Last Name' />
+                    <Input placeholder='Email address' label='Email' />
+                    <Input placeholder='Phone Number'    label='Phone Number' />
+                    <Input placeholder='Password' iconName='eye-off-outline'  label='Password' password />
+                    <Input placeholder='Confirm Password' iconName='eye-off-outline' label='Confirm Password' password />
+                    
 
                 </View>
             </ScrollView>
