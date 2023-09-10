@@ -1,10 +1,10 @@
 import { useFonts } from 'expo-font';
 import { StatusBar } from 'expo-status-bar';
 import { useCallback } from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
 
+import RegistrationScreen from './app/auth/registration';
 import FirstTimeLoginIn from './components/FirstTimeLoginIn';
-import RegistrationScreen from './components/screens/Registration';
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -25,12 +25,10 @@ export default function App() {
     return null;
   }
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
       <StatusBar hidden={false} style="auto" />
       <FirstTimeLoginIn />
-      
-    </View>
-    
+    </SafeAreaView>
   );
 }
 
@@ -38,8 +36,8 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    marginTop: 30,
-    // alignItems: 'center',
+
+    alignItems: 'center',
     justifyContent: 'center',
   },
 });

@@ -1,17 +1,16 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
-import Intro_1 from './Intro/Introduction';
-import Intro_2 from './Intro/IntroductionView';
-import Registration from './screens/Registration';
+import Registration from '../app/auth/registration';
+import Intro_1 from '../app/first_time_login/introduction';
+import Intro_2 from '../app/first_time_login/introduction_2';
 
 export default function FirstTimeLoginIn() {
   return (
     <View style={styles.container}>
       {/* <Intro_1 /> */}
-      {/* <Intro_2 /> */}
-      <Registration />
-
+      <Intro_2 />
+      {/* <Registration /> */}
     </View>
   );
 }

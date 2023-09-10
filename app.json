@@ -6,12 +6,15 @@
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
-  
+    "scheme": "com.tranzipper.com",
     "assetBundlePatterns": [
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "config": {
+        "usesNonExemptEncryption": false
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -19,15 +22,15 @@
         "backgroundColor": "#ffffff"
       }
     },
-
-  
     "web": {
       "favicon": "./assets/favicon.png"
     },
-
     "splash": {
       "image": "./assets/pngs/tranzipper_main.png",
       "backgroundColor": "#0A0A0A"
-    }
+    },
+    "plugins": [
+      "expo-router"
+    ]
   }
 }

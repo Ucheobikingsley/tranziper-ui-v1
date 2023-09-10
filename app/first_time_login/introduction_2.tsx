@@ -1,3 +1,4 @@
+import { router } from 'expo-router';
 import React from 'react';
 import {
   View,
@@ -9,12 +10,12 @@ import {
   TouchableOpacity,
 } from 'react-native';
 
-import DotSvg from '../../assets/svg_transformer/dotSvg';
-import IllustrationOne from '../../assets/svg_transformer/illustrationOne';
+import IllustrationTwo from '../../assets/svg_transformer/IllustrationTwo';
+import DotSvg_2 from '../../assets/svg_transformer/dotSvg_2';
 import { BORDERRADIUS, COLORS, FONTSIZE, SPACING } from '../../theme/theme';
 const { width, height } = Dimensions.get('window');
 
-export default function Intro_1() {
+export default function Intro_2() {
   return (
     <View style={styles.container}>
       <StatusBar hidden />
@@ -24,18 +25,20 @@ export default function Intro_1() {
           source={require('../../assets/pngs/tranzipper_main.png')}></Image>
       </View>
       <View style={styles.imageContainer}>
-        <IllustrationOne width={301} />
+        <IllustrationTwo width={301} />
       </View>
       <Text style={styles.info}>
-        Get help for everything you need around you instantly
+        Find trusted help for everything through our background-checked taskers
+        near you
       </Text>
       <View style={styles.dot}>
-        <DotSvg width={24} height={8} color="#1B5E20" />
+        <DotSvg_2 width={24} height={8} color="#1B5E20" />
       </View>
-      <TouchableOpacity style={styles.create}>
-        <Text style={styles.textColor}>Get Started</Text>
+      <TouchableOpacity
+        style={styles.create}
+        onPress={() => router.push('/auth/registration')}>
+        <Text style={styles.textColor}>Continue</Text>
       </TouchableOpacity>
-      <Text style={styles.skipButton}>Skip</Text>
     </View>
   );
 }
