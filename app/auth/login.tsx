@@ -38,6 +38,7 @@ const Login = ({ navigator }) => {
           name="Login"
           marginLeft={-30}
           defaultWidth={width / 1.3}
+          onClick={() => router.push('/Home_page/users') }
         />
         <View style={styles.info}>
           <View style={[styles.wrapper, { marginTop: 40 }]}>

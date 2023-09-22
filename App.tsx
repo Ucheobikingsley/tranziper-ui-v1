@@ -26,7 +26,7 @@ export default function App() {
   }
   return (
     <SafeAreaView style={styles.container}>
-      <StatusBar hidden={false} style="auto" />
+       <StatusBar hidden={false} style="auto" />
       <FirstTimeLoginIn />
     </SafeAreaView>
   );
